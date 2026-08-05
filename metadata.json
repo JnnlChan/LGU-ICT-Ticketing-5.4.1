@@ -1,0 +1,6 @@
+{
+  "name": "LGU ICT Ticketing System",
+  "description": "A modern Municipal Asset Management & ICT Support System for Local Government Units.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

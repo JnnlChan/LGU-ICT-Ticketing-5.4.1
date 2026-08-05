@@ -1,0 +1,32 @@
+#!/bin/bash
+find src/components -type f -name "*.tsx" -exec sed -i \
+  -e 's/bg-white/bg-surface/g' \
+  -e 's/bg-slate-50/bg-bg/g' \
+  -e 's/bg-slate-100/bg-white\/5/g' \
+  -e 's/bg-slate-200/bg-white\/10/g' \
+  -e 's/border-slate-100/border-border/g' \
+  -e 's/border-slate-200/border-border/g' \
+  -e 's/border-slate-300/border-border/g' \
+  -e 's/border-slate-800/border-border/g' \
+  -e 's/text-slate-900/text-ink/g' \
+  -e 's/text-slate-800/text-ink/g' \
+  -e 's/text-slate-700/text-ink-muted/g' \
+  -e 's/text-slate-600/text-ink-muted/g' \
+  -e 's/text-slate-500/text-ink-muted/g' \
+  -e 's/text-slate-400/text-ink-muted/g' \
+  -e 's/text-indigo-600/text-accent/g' \
+  -e 's/text-indigo-500/text-accent/g' \
+  -e 's/bg-indigo-600/bg-accent/g' \
+  -e 's/bg-indigo-700/bg-accent\/90/g' \
+  -e 's/bg-indigo-50/bg-accent\/10/g' \
+  -e 's/border-indigo-600/border-accent/g' \
+  -e 's/border-indigo-500/border-accent/g' \
+  -e 's/border-indigo-100/border-accent\/20/g' \
+  -e 's/ring-indigo-500/ring-accent/g' \
+  -e 's/shadow-indigo-100/shadow-accent\/20/g' \
+  -e 's/hover:bg-slate-50/hover:bg-white\/5/g' \
+  -e 's/hover:text-slate-900/hover:text-ink/g' \
+  -e 's/hover:bg-indigo-700/hover:brightness-110/g' \
+  -e 's/text-slate-300/text-ink-muted/g' \
+  -e 's/text-slate-200/text-ink-muted/g' \
+  {} +
